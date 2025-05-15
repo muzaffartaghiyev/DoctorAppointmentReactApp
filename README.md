@@ -1,10 +1,6 @@
-Here’s the README file for the given Clarus Hospital React app:
+# Clarus Hospital Appointment App
 
----
-
-# Clarus Hospital Appointment System
-
-The **Clarus Hospital Appointment System** is a React-based web application for managing doctor appointments. Users can view doctors, book appointments, and mark consultations as complete. It is designed to streamline the appointment booking process with an intuitive and interactive interface.
+It is a React-based web application for managing doctor appointments. Users can view doctors, book appointments, and mark consultations as complete. It is designed to streamline the appointment booking process with an intuitive and interactive interface.
 
 ---
 
@@ -20,30 +16,9 @@ The **Clarus Hospital Appointment System** is a React-based web application for 
 * **Interactive UI:** Hover effects and visual feedback to enhance user experience.
 
 ---
+## Preview
 
-## Installation
-
-1. Clone the repository or download the project files:
-
-   ```bash
-   git clone https://github.com/your-repo/clarus-hospital-app.git
-   ```
-2. Navigate to the project directory:
-
-   ```bash
-   cd clarus-hospital-app
-   ```
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-
-   ```bash
-   npm start
-   ```
-5. Open your browser and go to `http://localhost:3000`.
+![doctor_appointment](https://github.com/user-attachments/assets/2e4e2ade-4677-4b08-848d-ba4aeadc375b)
 
 ---
 
@@ -97,7 +72,6 @@ The **Clarus Hospital Appointment System** is a React-based web application for 
   * Gradients and shadows for the appointment containers.
   * Custom styles for consulted appointments, including a "CONSULTED" badge.
 * **Dynamic Classes:**
-
   * Appointments marked as "consulted" are styled differently using a conditional class.
 
 ---
@@ -122,50 +96,6 @@ src/
 
 ---
 
-## Sample Data Format
-
-### Doctor Data
-
-```javascript
-[
-  {
-    id: 1,
-    name: "Dr. John Doe",
-    dep: "Cardiology",
-    img: "./img/doctor1.jpg"
-  },
-  ...
-]
-```
-
-### Appointment Data
-
-```javascript
-[
-  {
-    id: 1,
-    patient: "Jane Smith",
-    day: "2025-05-09T14:00",
-    consulted: false,
-    doctor: "Dr. John Doe"
-  },
-  ...
-]
-```
-
----
-
-## How to Use
-
-1. Launch the app in your browser.
-2. View the list of doctors on the home page.
-3. Click on a doctor's image to open the appointment booking modal.
-4. Fill out the form with the patient's name and appointment date/time.
-5. View the list of booked appointments below the doctor list.
-6. Mark an appointment as "Consulted" by clicking on it.
-7. Delete an appointment using the delete button.
-
----
 
 ## Future Enhancements
 
@@ -175,17 +105,7 @@ src/
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
 ## Acknowledgments
 
 * **React Bootstrap:** For styling and responsive layout components.
-* **Clarusway:** For inspiration and support in building this app.
 
----
-
-Enjoy managing appointments with Clarus Hospital! 🩺
