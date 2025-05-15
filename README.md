@@ -1,4 +1,4 @@
-# Clarus Hospital Appointment App
+# Doctor Appointment App
 
 It is a React-based web application for managing doctor appointments. Users can view doctors, book appointments, and mark consultations as complete. It is designed to streamline the appointment booking process with an intuitive and interactive interface.
 
