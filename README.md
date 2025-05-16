@@ -17,8 +17,7 @@ It is a React-based web application for managing doctor appointments. Users can 
 
 ---
 ## Preview
-
-![doctor_appointment](https://github.com/user-attachments/assets/2e4e2ade-4677-4b08-848d-ba4aeadc375b)
+![doctor_appointment_app](https://github.com/user-attachments/assets/86ac8d1e-80e8-4e86-ad34-499016b2521b)
 
 ---
 
