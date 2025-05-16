@@ -6,6 +6,7 @@ import Doctors from "../components/Doctors"
 import AppointmentList from "../components/AppointmentList"
 
 import {doctorData, appointmentData} from "../helpers/Data"
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
 

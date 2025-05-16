@@ -1,23 +1,34 @@
 import { useState } from "react"
+import { v4 as uuidv4 } from "uuid";
+
+import { toast } from 'react-toastify';
 
 
 import {Button, Modal, Form} from "react-bootstrap"
 
+
 const AddModal = ({showModal,closeModal,doctorName,appointmentList,setAppointmentList}) => {
+  
 
   const [patientName,setPatientName] = useState('')
   const [date,setDate] = useState('')
 
   const handleSubmit =(e)=>{
       e.preventDefault()
+
+      if(patientName.trim()===''){
+        toast.error("Please fill out the name and surname field!");
+        return;
+      }
+
       setAppointmentList([...appointmentList,{
-          id: appointmentList.length+1,
+          id: uuidv4(),
           patient: patientName,
           day: date,
           consulted: false,
           doctor: doctorName,
       }])  
-
+      toast.success("Appointment added successfully!");
       closeModal()
   }
 
@@ -30,10 +41,10 @@ const AddModal = ({showModal,closeModal,doctorName,appointmentList,setAppointmen
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Patient Name</Form.Label>
+              <Form.Label>Patient Name and Surname</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter your name"
+                placeholder="Enter name and surname"
                 autoFocus
                 onChange={(e)=>setPatientName(e.target.value)}
                 value={patientName}

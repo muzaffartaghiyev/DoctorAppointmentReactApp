@@ -28,6 +28,7 @@ It is a React-based web application for managing doctor appointments. Users can 
 * **React Bootstrap:** For responsive layout and styling.
 * **CSS:** Additional styling for custom elements.
 * **React Icons:** For interactive icons like delete buttons.
+* **React Toastify:** For showing feedbacks of some actions.
 
 ---
 
